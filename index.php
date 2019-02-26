@@ -8,12 +8,29 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Pokemon Project</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="icon.png" />
+    <title>Pokedex Project</title>
   </head>
   <body>
     <img src="pokemon.png" class="img-fluid" style="width: 100%;">
       <?php include 'navbar.html' ?>
+
+  <!-- pagination navigation -->
+  <div class="container-fluid bg-dark p-2">
+    <nav>
+  <ul class="pagination justify-content-around">
+    <li class="d-inline">
+      <a href="#" class="text-danger fa-3x"><i class="mr-2 fas fa-arrow-alt-circle-left"></i><span class="d-none d-md-inline">Previous</span></a>
+    </li>
+    <li class="d-inline">
+      <a href="#" class="text-danger fa-3x"><span class="d-none d-md-inline">Forward</span><i class="ml-2 fas fa-arrow-alt-circle-right"></i></a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+  <!-- List the Pokemon on page load -->
 	  <div class="container-fluid">
     <div class="row justify-content-around">
           <?php
@@ -32,10 +49,6 @@
             ?>
      </div>
 	 </div>
-   
-   <div class="container-fluid sticky-bottom bg-dark text-light" id="footer">
-   <h1>Footer for page navigation</h1>
-   </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
